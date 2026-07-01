@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport"
+content="width=device-width,initial-scale=1">
+
+<title>Modern Image Gallery</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="bg-circle c1"></div>
+<div class="bg-circle c2"></div>
+
+<div class="container">
+
+<h1>Image Gallery</h1>
+<p>Explore beautiful moments</p>
+
+<div class="line"></div>
+
+<div class="filters">
+
+<button class="active"
+onclick="filterGallery('all',event)">
+All
+</button>
+
+<button
+onclick="filterGallery('nature',event)">
+Nature
+</button>
+
+<button
+onclick="filterGallery('city',event)">
+City
+</button>
+
+<button
+onclick="filterGallery('animals',event)">
+Animals
+</button>
+
+</div>
+
+<div class="gallery">
+
+<div class="card nature">
+<img src="images/img1.jpeg"
+onclick="openBox(0)">
+<span>Nature</span>
+</div>
+
+<div class="card city">
+<img src="images/img2.jpeg"
+onclick="openBox(1)">
+<span>City</span>
+</div>
+
+<div class="card animals">
+<img src="images/img3.jpeg"
+onclick="openBox(2)">
+<span>Animals</span>
+</div>
+
+<div class="card nature">
+<img src="images/img4.jpeg"
+onclick="openBox(3)">
+<span>Nature</span>
+</div>
+
+<div class="card city">
+<img src="images/img5.jpeg"
+onclick="openBox(4)">
+<span>City</span>
+</div>
+
+<div class="card animals">
+<img src="images/img6.jpeg"
+onclick="openBox(5)">
+<span>Animals</span>
+</div>
+
+</div>
+
+</div>
+
+<div class="lightbox"
+id="lightbox">
+
+<button
+class="nav left"
+onclick="move(-1)">
+❮
+</button>
+
+<img id="preview">
+
+<button
+class="nav right"
+onclick="move(1)">
+❯
+</button>
+
+<span
+class="close"
+onclick="closeBox()">
+×
+</span>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
